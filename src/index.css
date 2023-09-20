@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media print{
+    .p-button, .react-flow__minimap, .react-flow__controls, #myGMA, #darkModeToggle{
+        display: none;
+    }
+    #Msg{
+        display: inline;
+    }
+/* #print-only-img{
+    visibility: visible;
+} */
+}
+@media screen {
+     #Msg{
+    display: none;
+} 
+}
+  body.dark {
+    background-color: #0a1627;
+    color:#D1C7C8;
+  }
+  body.dark h1, body.dark h2{
+    color:#F3F1F1;
+  }
+  body.light {
+    background-color: #fffcf3;
+  }
